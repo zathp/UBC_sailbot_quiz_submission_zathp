@@ -33,7 +33,3 @@ def test_between_basic1():
     assert is_angle_between(-30, 0, 30)
     assert is_angle_between(30, 30, 90)
     assert is_angle_between(30, 90, 90)
-
-
-test_bound_basic1()
-test_between_basic1()

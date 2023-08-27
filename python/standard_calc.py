@@ -37,7 +37,7 @@ def is_angle_between(first_angle, middle_angle, second_angle):
     abs_diff_of_diff = abs(first_bound_diff - second_bound_diff)
     abs_sum_of_diff = abs(first_bound_diff + second_bound_diff)
 
-    if((180 >= abs_diff_of_diff) & (abs_diff_of_diff >= abs_sum_of_diff)):
+    if ((180 >= abs_diff_of_diff) & (abs_diff_of_diff >= abs_sum_of_diff)):
         return True
     else:
         return False
