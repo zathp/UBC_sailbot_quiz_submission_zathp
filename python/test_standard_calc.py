@@ -20,15 +20,15 @@ def test_bound_basic1():
 
 def test_between_basic1():
     assert is_angle_between(0, 1, 2)
-    assert is_angle_between(120, 180, 330) == False
-    assert is_angle_between(330, 180, 120) == False
+    assert not is_angle_between(120, 180, 330)
+    assert not is_angle_between(330, 180, 120)
     assert is_angle_between(120, 90, 330)
     assert is_angle_between(330, 90, 120)
     assert is_angle_between(90, 120, 180)
     assert is_angle_between(180, 120, 90)
-    assert is_angle_between(90, 210, 180) == False
-    assert is_angle_between(180, 210, 90) == False
-    assert is_angle_between(270, 30, 330) == False
+    assert not is_angle_between(90, 210, 180)
+    assert not is_angle_between(180, 210, 90)
+    assert not is_angle_between(270, 30, 330)
     assert is_angle_between(30, 30, 30)
     assert is_angle_between(-30, 0, 30)
     assert is_angle_between(30, 30, 90)
