@@ -34,7 +34,6 @@ def is_angle_between(first_angle, middle_angle, second_angle):
     """
     first_bound_diff = bound_to_180(middle_angle - first_angle)
     second_bound_diff = bound_to_180(middle_angle - second_angle)
-    print("d1="+str(first_bound_diff)+",d2="+str(second_bound_diff))
     abs_diff_of_diff = abs(first_bound_diff - second_bound_diff)
     abs_sum_of_diff = abs(first_bound_diff + second_bound_diff)
 
